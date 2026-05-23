@@ -54,7 +54,7 @@ app.get('/', (req, res) => {
 });
 
 
-// Add this route to your server.js (before app.listen)
+// API endpoint to handle search requests from the frontend
 
 app.post('/api/search', async (req, res) => {
     const { query } = req.body;
@@ -64,7 +64,7 @@ app.post('/api/search', async (req, res) => {
     }
 
     try {
-        // Generate content using the initialized 'ai' object on the backend
+        // Call the Gemini API to get a response based on the user's query
         const response = await ai.models.generateContent({
             model: "gemini-2.5-flash", 
             contents: query,
