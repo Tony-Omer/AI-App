@@ -1,0 +1,129 @@
+body{
+    color: rgb(227, 227, 227);
+    background-color: black;
+    font-family: ' Iosevka ', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 20px;
+}
+
+
+
+
+.ai-answer #answer{
+    margin: auto;
+    margin-top: 20px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.5;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+
+
+
+
+.parent {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+}
+
+
+
+span{
+    display: flex;
+    margin: auto;
+    margin-top: 170px;
+    align-items: center;
+    gap: 10px;
+}
+
+span .robot-icon{
+    font-size: 37px;
+}
+
+span h1{
+    font-size: 36px;
+    margin: 0;
+}
+
+
+.greeting{
+    margin: auto;
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+.search-box {
+    margin: 40px auto; 
+    /* Width and sizing */
+    width: 85%;
+    max-width: 768px;    
+    min-width: 320px;    
+    height: auto;
+    min-height: 48px;   
+    padding: 10px 14px;  
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: #242424;
+    border: 1px solid #303030;
+    border-radius: 26px;
+    /* Smooth scaling transition */
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    box-sizing: border-box; 
+}
+
+
+.dive-down {
+    position: absolute;
+    
+    bottom: 30px;
+}
+
+
+.search-box:focus-within {
+    border-color: red;
+    box-shadow: 0 0 0 1px #4d4d4d;
+}
+
+
+
+.search-box input {
+    flex: 1;
+    align-items: center;
+    padding: 0;
+    border: none;
+    background: transparent;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    color: rgb(227, 227, 227);
+    font-size: 16px;
+    outline: none;
+}
+
+
+
+
+.search-box .microphone-icon {
+    font-size: 21px;
+    margin-left: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.search-box .microphone-icon:hover {
+    cursor: pointer;
+    background-color: #535353;
+}
