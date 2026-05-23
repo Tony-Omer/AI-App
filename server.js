@@ -14,7 +14,7 @@ import { GoogleGenAI } from '@google/genai';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// 1. Initialize dotenv so process.env works
+
 dotenv.config();
 
 const app = express();

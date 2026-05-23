@@ -32,8 +32,6 @@ if (SpeechRecognition) {
         console.log("What you said:", transcript);
         searchInput.value = transcript; 
         
-        // Optional: If you want it to search immediately after speaking finishes,
-        // you could call executeSearch(transcript) right here!
     };
 
     // 5. Handle when listening stops naturally or manually
@@ -43,7 +41,7 @@ if (SpeechRecognition) {
         searchBox.classList.remove("dive-down"); 
     };
 
-    // 6. Handle errors gracefully
+    // 6. Handle errors 
     recognition.onerror = (event) => {
         isListening = false;
         console.error("Speech recognition error:", event.error);
@@ -134,7 +132,7 @@ btn.addEventListener("click", () => {
     executeSearch(query);
 });
 
-// Handle Enter key for search input (Added 'async' here to fix the crash)
+// Handle Enter key for search input field
 searchInput.addEventListener("keydown", async (event) => {
     if (event.key === "Enter") {
         const inputValue = searchInput.value.trim();
